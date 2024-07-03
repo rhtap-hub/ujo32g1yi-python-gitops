@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ujo32g1yi-python-repository
+spec:
+  url: https://github.com/rhtap-hub/ujo32g1yi-python

@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ujo32g1yi-python-gitops
+  description: This is GitOps manifest for ujo32g1yi-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: ujo32g1yi-python
+    janus-idp.io/tekton: ujo32g1yi-python 
+    backstage.io/kubernetes-id: ujo32g1yi-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ujo32g1yi-python
